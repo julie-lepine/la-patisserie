@@ -1,0 +1,75 @@
+main {
+  padding: 2%;
+  text-align: center;
+}
+
+.repasun,
+.repasdeux,
+.newsletter {
+  background-color: rgba(248, 246, 246, 0.164);
+  border: 1px solid black;
+  padding: 3%;
+  margin: 2% auto;
+  width: 40%;
+}
+
+.texte {
+  background-color: rgba(252, 249, 248, 0.425);
+  padding: 1%;
+  margin: 1%;
+}
+
+.newsletter p,
+.newsletter input {
+  padding: 1%;
+  margin: 1%;
+}
+
+.spam {
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+.repas a {
+  text-decoration: none;
+}
+
+.repas button:hover {
+  background-color: rgba(255, 0, 0, 0.486);
+}
+
+.newsletter button:hover, .repas button:hover {
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1000px) {
+  .image {
+      width: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+.repasun, .repasdeux {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: auto;
+   margin: 2% 0;
+}
+
+.image {
+   width: 150px;
+}
+
+.newsletter {
+   width: auto;
+   margin: 2% 0;
+}
+}
+
+@media screen and (max-width: 450px) {
+.image {
+    width: 100px;
+}
+}

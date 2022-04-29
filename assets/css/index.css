@@ -1,0 +1,30 @@
+/* MAIN */
+main {
+    margin: 5% auto;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.384);
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+    padding: 5%;
+}
+
+main a {
+    color: white;
+    text-decoration: none;
+}
+
+main p {
+    padding: 3%;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 700px) {
+    article section div img {
+        display: none;
+    }
+
+    main {
+        width: 60%;
+    }
+}

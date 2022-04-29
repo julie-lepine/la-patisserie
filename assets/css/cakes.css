@@ -1,0 +1,87 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 3%;
+}
+
+.cakes {
+  background-color: rgba(173, 167, 173, 0.534);
+  text-align: center;
+  padding: 2%;
+  margin: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image {
+  float: right;
+  width: 50%;
+}
+
+.texte {
+  float: left;
+  padding: 2%;
+  width: 45%;
+  height: auto;
+}
+
+.choix {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: rgba(255, 0, 0, 0.486);
+}
+
+/* HOVER SUR CAKE : */
+button,
+.cakes:hover img,
+.cakes:hover p {
+  display: none;
+}
+
+.cakes:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cakes:hover button {
+  display: block;
+  padding: 5%;
+  font-size: 1.5em;
+}
+
+/* TAILLE SCROLLBAR 
+::-webkit-scrollbar {
+    width: 25px !important;
+    height: 25px !important;
+}*/
+
+.cakes button:hover {
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 700px) {
+  .container {
+      grid-template-columns: 1fr;
+    }
+
+    .image {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .image {
+        width: 150px;
+    }
+}

@@ -1,0 +1,25 @@
+.container {
+    text-align: center;
+}
+
+.container {
+    border: solid;
+    margin: 5% 5% 2% 5%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background-color: rgba(252, 249, 248, 0.425);
+    padding: 3%;
+    width: 100%;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 600px) {
+    form, textarea {
+        max-width: 100%; 
+        padding: 0;
+    }
+}
