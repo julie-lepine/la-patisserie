@@ -1,5 +1,4 @@
 body {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,12 +29,14 @@ main p {
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 700px) {
-    article section div img {
-        display: none;
-    }
-
+@media screen and (max-width: 850px) {
     main {
         width: 60%;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    main p {
+        font-size: 1.5rem;
     }
 }

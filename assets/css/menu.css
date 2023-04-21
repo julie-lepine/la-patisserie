@@ -78,6 +78,10 @@ main {
   cursor: pointer;
 }
 
+form input {
+  text-align: center;
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 1000px) {
   .image {
