@@ -1,20 +1,23 @@
 main {
   padding: 2%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .repasun,
 .repasdeux,
 .newsletter {
-  background-color: rgba(248, 246, 246, 0.164);
+  background-color: rgba(252, 252, 252, 0.686);;
   border: 1px solid black;
   padding: 3%;
   margin: 2% auto;
-  width: 40%;
+  width: 70%;
 }
 
 .texte {
-  background-color: rgba(252, 249, 248, 0.425);
+  background-color: rgb(252, 252, 252);;
   padding: 1%;
   margin: 1%;
 }
@@ -30,46 +33,80 @@ main {
   font-style: italic;
 }
 
+.image {
+  margin-bottom: 5%;
+}
+
 .repas a {
   text-decoration: none;
+}
+
+.texte {
+  padding: 3%;
+}
+
+.texte button {
+  margin-bottom: 5%;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2%;
+}
+
+.priceTxt {
+  margin: 0;
+}
+
+.euroSign {
+  width: 1.5rem;
+}
+
+.newsletter button {
+  margin-top: 5%;
 }
 
 .repas button:hover {
   background-color: rgba(255, 0, 0, 0.486);
 }
 
-.newsletter button:hover, .repas button:hover {
-    cursor: pointer;
+.newsletter button:hover,
+.repas button:hover {
+  cursor: pointer;
 }
 
 /* RESPONSIVE */
 @media screen and (max-width: 1000px) {
   .image {
-      width: 200px;
+    width: 200px;
   }
 }
 
 @media screen and (max-width: 600px) {
-.repasun, .repasdeux {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   width: auto;
-   margin: 2% 0;
-}
+  .repasun,
+  .repasdeux {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    margin: 2% 0;
+  }
 
-.image {
-   width: 150px;
-}
+  .image {
+    width: 150px;
+  }
 
-.newsletter {
-   width: auto;
-   margin: 2% 0;
-}
+  .newsletter {
+    width: auto;
+    margin: 2% 0;
+  }
 }
 
 @media screen and (max-width: 450px) {
-.image {
+  .image {
     width: 100px;
-}
+  }
 }

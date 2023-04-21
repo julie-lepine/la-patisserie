@@ -10,6 +10,10 @@ h3 {
     width: 50%;
     margin: 3% auto;
     border-radius: 0% 15%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .image img {
@@ -19,19 +23,20 @@ h3 {
 .avis, .image {
     text-align: center;
     font-style: italic;
-}
-
-.name {
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .date {
     display: flex;
     align-items: center;
+    justify-content: center;
     grid-area: one;
 }
 
 div.boite {
+    margin-bottom: 2%;
     padding: 2%;
     line-height: 200%;
     display: grid;

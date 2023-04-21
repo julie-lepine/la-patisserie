@@ -1,0 +1,2 @@
+- pastries : chargement au scroll
+- devis - alert('ok bien envoyé) après soumission devis
